@@ -1,0 +1,12 @@
+{
+  "short_name": "Gamewarp",
+  "name": "Gamewarp Co.",
+  "start_url": "https://gamewarp.netlify.app",
+  "scope": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#A855F7",
+  "orientation": "any",
+  "dir": "ltr",
+  "lang": "en"
+}
