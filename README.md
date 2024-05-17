@@ -2,10 +2,11 @@
 
 ##Start: 
 
--npm run dev
+`npm run dev`
 
 ##Host at specific address: 
--npm run dev -- --host=X.X.X.X
+
+`npm run dev -- --host=X.X.X.X`
 
 
 ## Description
