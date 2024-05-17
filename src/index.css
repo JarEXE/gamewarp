@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:outline-none focus:ring focus:ring-purple-400 md:px-6 md:py-3;
+  }
+  .slide {
+    @apply relative h-full w-full;
+  }
+  .image {
+    @apply h-full w-full object-cover;
+  }
+  .arrow {
+    @apply absolute top-1/2 translate-y-[-50%] 
+    scale-[2] rounded-full bg-green-900 text-xs 
+    font-bold sm:text-base md:text-xl;
+  }
+  .prev {
+    @apply left-5 px-1.5 py-0.5 sm:px-2;
+  }
+  .next {
+    @apply right-5 px-1.5 py-0.5 sm:px-2;
+  }
+
+  /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+  .loader {
+    width: 45px;
+    aspect-ratio: 0.75;
+    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+    background:
+      var(--c) 0% 50%,
+      var(--c) 50% 50%,
+      var(--c) 100% 50%;
+    background-size: 20% 50%;
+    animation: loading 1s infinite linear;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black see-through */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+
+  .carousel div {
+    opacity: 0;
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .carousel div.active {
+    opacity: 1;
+  }
+
+  .carousel .overlay {
+    opacity: 1;
+  }
+
+  @keyframes loading {
+    20% {
+      background-position:
+        0% 0%,
+        50% 50%,
+        100% 50%;
+    }
+    40% {
+      background-position:
+        0% 100%,
+        50% 0%,
+        100% 50%;
+    }
+    60% {
+      background-position:
+        0% 50%,
+        50% 100%,
+        100% 0%;
+    }
+    80% {
+      background-position:
+        0% 50%,
+        50% 50%,
+        100% 100%;
+    }
+  }
+}
