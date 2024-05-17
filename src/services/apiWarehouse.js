@@ -992,6 +992,7 @@ export async function createOrder(newOrder) {
       body: JSON.stringify(newOrder),
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     });
 
@@ -1010,6 +1011,7 @@ export async function updateOrder(id, updateObj) {
       body: JSON.stringify(updateObj),
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     });
 
