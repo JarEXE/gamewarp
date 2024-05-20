@@ -39,3 +39,13 @@ Custom database / API for managing admins, users, customers, and items.
 E-mail notifications to configured app admins / workers to notify new incoming orders.
 
 etc...
+
+
+## Screenshots
+![landing page](https://imgur.com/ubc7kWN.png)
+
+![catalogue](https://imgur.com/oUQ5nHA.png)
+
+![cart](https://imgur.com/UOSPdQD.png)
+
+![order](https://imgur.com/rOkqpiH.png)
