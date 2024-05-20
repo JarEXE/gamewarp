@@ -1,6 +1,10 @@
 # React + Vite
 
+<strong>Demo: https://gamewarp.netlify.app</strong>
+
 ##Start:
+
+`clone` this repository.
 
 `npm run dev`
 
@@ -11,6 +15,8 @@
 ## Description
 
 Gamewarp is a React web application that offers a simple demo of a video game webshop.
+
+It makes use of Redux and Redux Thunk for state management. 
 
 ## Note
 
